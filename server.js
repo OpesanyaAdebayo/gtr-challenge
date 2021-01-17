@@ -1,5 +1,5 @@
 const express = require('express');
-const { APP_PORT, ENVIRONMENT } = require('./src/config/secrets');
+const { PORT, ENVIRONMENT } = require('./src/config/secrets');
 const logger = require('./src/util/logger');
 const dbClient = require('./src/config/db');
 
@@ -37,8 +37,8 @@ app.use((err, req, res, _next) => {
   });
 });
 
-const server = app.listen(APP_PORT, () => {
-  logger.info(`App started on port ${APP_PORT}`);
+const server = app.listen(PORT, () => {
+  logger.info(`App started on port ${PORT}`);
 });
 
 module.exports = { app, server };
