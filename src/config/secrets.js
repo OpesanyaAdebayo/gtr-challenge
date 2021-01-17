@@ -3,7 +3,7 @@ const logger = require('../util/logger');
 
 dotenv.config({ path: '.env' });
 
-const { APP_PORT, MONGODB_URI } = process.env;
+const { APP_PORT = 4000, MONGODB_URI } = process.env;
 const ENVIRONMENT = process.env.NODE_ENV || 'development';
 
 if (!MONGODB_URI) {
