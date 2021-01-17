@@ -37,7 +37,7 @@ app.use((err, req, res, _next) => {
   });
 });
 
-const server = app.listen(APP_PORT || 3000, () => {
+const server = app.listen(APP_PORT, () => {
   logger.info(`App started on port ${APP_PORT}`);
 });
 
