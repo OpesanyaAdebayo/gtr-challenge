@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: 'getir-api',
-    script: 'server.js',
+    script: './server.js',
     instances: 1,
     autorestart: true,
     watch: false,
